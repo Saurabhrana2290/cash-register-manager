@@ -5,20 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cash Reister Manager</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1 id="heading">Cash Register Manager</h1>
-    <label for="label-bill-amount" class="label-input" id="label-bill-amount">Bill Amount</label>
+    <label for="bill-amount" class="label-input" id="label-bill-amount">Bill Amount</label>
     <input type="text" class="amount-inputs" id="bill-amount">
     <label for="cash-given" class="label-input" id="label-cash-given">Cash Given</label>
     <input type="text" class="amount-inputs" id="cash-given">
-    <button id="check">Check</button>
+    <button id="check-btn">Check</button>
+    <div id="message"></div>
 
     <table>
         <caption>Returned Amount</caption>
         <tbody>
             <tr>
                 <th>Notes Count</th>
+                <td id="n1"></td>
+                <td id="n2"></td>
+                <td id="n3"></td>
+                <td id="n4"></td>
+                <td id="n5"></td>
+                <td id="n6"></td>
+                <td id="n7"></td>
             </tr>
             <tr>
                 <th>Notes</th>
@@ -32,5 +41,6 @@
             </tr>
         </tbody>
     </table>
+    <script src="app.js"></script>
 </body>
 </html>
