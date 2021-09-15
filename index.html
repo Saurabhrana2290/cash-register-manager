@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,40 +8,46 @@
     <title>Cash Reister Manager</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1 id="heading">Cash Register Manager</h1>
-    <label for="bill-amount" class="label-input" id="label-bill-amount">Bill Amount</label>
-    <input type="text" class="amount-inputs" id="bill-amount">
-    <label for="cash-given" class="label-input" id="label-cash-given">Cash Given</label>
-    <input type="text" class="amount-inputs" id="cash-given">
-    <button id="check-btn">Check</button>
-    <div id="message"></div>
 
-    <table>
-        <caption>Returned Amount</caption>
-        <tbody>
-            <tr>
-                <th>Notes Count</th>
-                <td id="n1"></td>
-                <td id="n2"></td>
-                <td id="n3"></td>
-                <td id="n4"></td>
-                <td id="n5"></td>
-                <td id="n6"></td>
-                <td id="n7"></td>
-            </tr>
-            <tr>
-                <th>Notes</th>
-                <td>2000</td>
-                <td>500</td>
-                <td>100</td>
-                <td>20</td>
-                <td>10</td>
-                <td>5</td>
-                <td>1</td>
-            </tr>
-        </tbody>
-    </table>
-    <script src="app.js"></script>
+<body>
+    <div class="container">
+        <h1 id="heading">Cash Register Manager</h1>
+        <label for="bill-amount" class="label-input" id="label-bill-amount">Bill Amount</label>
+        <input type="text" class="amount-inputs" id="bill-amount">
+        <label for="cash-given" class="label-input" id="label-cash-given">Cash Given</label>
+        <input type="text" class="amount-inputs" id="cash-given">
+        <button id="check-btn">Check</button>
+        <div id="error-message"></div>
+
+        <table>
+            <caption>Returned Amount</caption>
+            <tbody>
+                <tr>
+                    <th>Notes Count</th>
+                    <td class="n"></td>
+                    <td class="n"></td>
+                    <td class="n"></td>
+                    <td class="n"></td>
+                    <td class="n"></td>
+                    <td class="n"></td>
+                    <td class="n"></td>
+                </tr>
+                <tr>
+                    <th>Notes</th>
+                    <td>2000</td>
+                    <td>500</td>
+                    <td>100</td>
+                    <td>20</td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <script src="main.js"></script>
 </body>
+
 </html>
