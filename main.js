@@ -1,4 +1,3 @@
-
 const checkButton = document.querySelector('#check-btn');
 const billAmount = document.querySelector("#bill-amount");
 const cashGiven = document.querySelector("#cash-given");

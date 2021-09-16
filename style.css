@@ -3,12 +3,48 @@
     flex-direction: column;
     width: 50vw;
 } */
-
-*{
-    color: black;
-    background-color: rgb(243, 217, 243);
-    text-align: center;
+body{
+    margin: auto;
+    max-width: 60%;
 }
+
 #heading{
     text-align: center;
+    margin-bottom: 10px;
+
 }
+p{
+    text-align: center;
+}
+
+#label-bill-amount{
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+}
+
+#label-cash-given{
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+}
+
+
+
+#check-btn{
+    margin: auto;
+    display: block;
+}
+
+#error-message{
+    text-align: center;
+}
+
+#data-table{
+    margin: auto;
+}
+
+.input-form{
+    margin-bottom: 10px;
+}
+
