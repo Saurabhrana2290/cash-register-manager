@@ -1,5 +1,14 @@
-.container{
+/* .container{
     display: flex;
     flex-direction: column;
     width: 50vw;
+} */
+
+*{
+    color: black;
+    background-color: rgb(243, 217, 243);
+    text-align: center;
+}
+#heading{
+    text-align: center;
 }
