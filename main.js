@@ -4,25 +4,10 @@ const cashGiven = document.querySelector("#cash-given");
 const message = document.querySelector("#error-message");
 const noOfNotes = document.querySelectorAll(".no-of-notes");
 const availableNotes = [2000, 500, 100, 20, 10, 5, 1];
-checkButton.addEventListener("click", function validateBillAndCashAmount() {
+checkButton.addEventListener("click",function validateBillAndCashAmount(){
   hideMessage();
-  if(billAmount.value > 0) {
-
-    if( billAmount.value < cashGiven.value) {
-      const amountToBeReturned = cashGiven.value - billAmount.value;
-      calculateChange(amountToBeReturned);
-    }
-    else if(billAmount.value===cashGiven.value){
-      showMessage("No amount to be returned!");
-    }
-    else if(cashGiven.value < billAmount.value){
-      showMessage("Cash given less than the bill amount is not acceptable!");
-    }
-
-  } 
-  else{
-    showMessage("Bill Amount should be greater than zero!");
-  }
+  const amountToBeReturned = cashGiven.value - billAmount.value;
+  (billAmount.value>0) ? ((cashGiven.value>=billAmount.value) ? calculateChange(amountToBeReturned):showMessage("Cash given cannot be less than bill amount!")  ) : showMessage("Invalid bill amount!");
 });
 function calculateChange(amountToBeReturned) {
   for (let i = 0; i < availableNotes.length; i++) {
