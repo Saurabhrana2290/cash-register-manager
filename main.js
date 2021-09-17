@@ -16,7 +16,7 @@ checkButton.addEventListener("click", function validateBillAndCashAmount() {
       showMessage("No amount to be returned!");
     }
     else if(cashGiven.value < billAmount.value){
-      showMessage("Cash given less then the bill amount is not acceptable!");
+      showMessage("Cash given less than the bill amount is not acceptable!");
     }
 
   } 
